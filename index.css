@@ -1,0 +1,381 @@
+/* Общие стили для переключателя темы */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.theme-toggle-btn {
+    background: #2D6AC8;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+    background: #5a87d0;
+    transform: translateY(-2px);
+}
+
+.theme-icon {
+    font-size: 16px;
+}
+
+/* Светлая тема (по умолчанию) */
+:root {
+    --bg-color: #F0F3F7;
+    --card-bg: white;
+    --text-color: black;
+    --accent-color: #2D6AC8;
+    --secondary-bg: #F0F3F7;
+}
+
+/* Темная тема */
+body.dark-theme {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #e0e0e0;
+    --accent-color: #2D6AC8;
+    --secondary-bg: #2d2d2d;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.str1{
+    display: flex;
+    gap: 58px;
+}
+
+.tablo{
+    display: flex;
+}
+
+#ak {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 45px;
+  margin: 21px 20px;
+}
+
+#pr{
+    font-family: 'Inter';
+    font-size: 18px;
+    margin-top: 27px;
+    margin-left: 400px;
+    margin-right: 200px;
+}
+
+#halyava {
+    width: 1160px;
+    height: 325px;
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-bottom: 119px;
+}
+
+/* ---------------------------- */
+
+.besplatno {
+    width: 540px;
+    height: 190px;
+    background-color: var(--accent-color);
+    border-radius: 15px;
+    margin-left: 2px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#besplatno1 {
+    font-family: 'Inter';
+    color: #2D6AC8;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    width: 92px;
+    height: 28px;
+}
+
+#besplatno2 {
+    font-family: 'Inter';
+    color: white;
+    margin-top: 85px;
+}
+
+#vent {
+    width: 160px;
+    height: 160px;
+}
+
+/* ------------------------------------ */
+
+#vverh{
+    display: flex;
+    gap: 5px;
+    margin-left: -9px;
+    margin-top: -19px;
+}
+
+#domofon{
+    width: 540px;
+    height: 190px;
+    background-color: var(--accent-color);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+#DVpr {
+    width: 50px;
+    height: 27px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 14px;
+    color: #2D6AC8;
+}
+
+#DOMf {
+    width: 155px;
+    height: 27px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;  
+    font-family: 'Inter';
+    font-size: 14px;
+    color: #2D6AC8;
+    margin-bottom: -9px;
+}
+
+#SKIDKA {
+    font-family: 'Inter';
+    color: white;
+    font-size: 22px;
+    margin-top: 40px;
+    margin-left: -9px;
+}
+
+#qilindr{
+    width: 150px;
+    height: 150px;
+}
+
+/* ---------------------------------------------- */
+
+#str2{
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    width: 1161px;
+    height: 169px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    display: flex;
+}
+
+#bloki{
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+}
+
+#bl{
+    width: 300px;
+    height: 130px;
+    background-color: var(--accent-color);
+    border-radius: 15px;
+}
+
+#bl2{
+    width: 300px;
+    height: 130px;
+    background-color: var(--accent-color);
+    border-radius: 15px;
+}
+
+.krugal{
+    position: relative;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 29px;
+    width: 37px;
+    height: 37px;
+}
+
+.galka{
+    position: absolute;
+    padding-top: 6px;
+    margin-left: -31px;
+}
+
+#zajvk {
+    font-family: 'Inter';
+    color: var(--text-color);
+    font-size: 44px;
+    padding-left: 15px;
+    padding-top: 23px;
+    margin: 0px;
+}
+
+#zajvk2 {
+    font-family: 'Inter';
+    color: white;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+#spisok {
+    font-family: 'Inter';
+    color: white;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+/* ---------------------------------- */
+
+#str3{
+    width: 1160px;
+    height: 397px;
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    margin: 0 auto;
+    display:block
+}
+
+#st{
+    display: flex;
+}
+
+#logo2{
+    width: 311px;
+    height: 125px;
+    padding: 20px;
+}
+
+#spisk{
+    display: flex;
+    gap: 15px;
+    width: 364px;
+    height: 29px;
+    padding-left:425px ;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.sp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-bg);
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#sp1{
+    width: 84px;
+    height: 29px;
+}
+
+#sp2{
+    width: 144px;
+    height: 29px;
+}
+#sp3{
+    width: 106px;
+    height: 29px;
+}
+
+#nom{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#i {
+    font-weight: 700;
+    font-family: 'Inter';
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+#nomer {
+    font-weight: 700;
+    font-family: 'Inter';
+    margin-top: 0;
+}
+
+#niz{
+    display: flex;
+}
+
+#polit{
+    color: var(--text-color);
+    font-size: 12px;
+    padding-top: 108px;
+    padding-right: 475px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+#street{
+    font-family: 'Inter';
+    font-size: 44px;
+    font-weight: 600;
+    padding-top: 30px;
+    width: 576px;
+    height: 108px;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+/* ------------------------------------------------------------- */
+.registration-btn {
+    text-align: left;
+    margin: 20px 0;
+    position: fixed;
+}
+
+.registration-btn a {
+    display: inline-block;
+    background: #2D6AC8;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px; 
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(45, 106, 200, 0.3);
+}
+
+.registration-btn a:hover {
+    background: #2563c7;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(45, 106, 200, 0.4);
+}
